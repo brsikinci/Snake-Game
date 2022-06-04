@@ -26,7 +26,7 @@ void draw_boundary(int boundaryLength, int boundaryWidth)
     snprintf(format, get_digit_count(2 * boundaryLength - 1) + 5, "%c%%%dc\n", widthChar, 2 * boundaryLength - 1);
 
     for(i = 0; i < boundaryWidth - 2; i++) {
-        printf(format, widthChar);
+        printf("%s", format, widthChar);
     }
     
     free(format);
